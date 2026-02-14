@@ -1,4 +1,4 @@
-# Tema 2 : Nivel Novato
+# Tema 2 : Super Trunfo
 
 ## Descrição do Projeto
 
@@ -64,7 +64,48 @@ O programa compila e executa corretamente sem erros.
 
 ---
 
+## Nivel Aventureiro
+
+### Novas Funcionalidades
+
+Além das funcionalidades do nível novato, o programa passa a:
+
+- Calcular a densidade populacional (população / área)
+- Calcular o PIB per capita (PIB / população)
+- Exibir os valores calculados com duas casas decimais
+
+### Cálculos Realizados
+
+- Densidade Populacional = População ÷ Área
+- PIB per Capita = PIB ÷ População
+
+---
+
+### Proposta
+
+No nível aventureiro, o programa poderá ser expandido para incluir:
+
+- Comparação entre cartas
+- Identificação da carta vencedora por atributo
+- Cálculo de super poder
+- Uso de estruturas de decisão e repetição
+- Organização dos dados com estruturas (`struct`)
+
+⚠️ **Este nível não está implementado neste código**, apenas descrito como evolução futura.
+
+---
+
+## Requisitos Não Funcionais Atendidos
+
+- Usabilidade: instruções claras ao usuário
+- Legibilidade: código bem indentado e comentado
+- Corretude: compilação e execução sem erros
+- Eficiência: cálculos simples e diretos
+
+---
+
 ## Como Compilar
 
-Utilizando GCC:
+```powershell
+gcc super_trunfo_tema2_intermediario.c -o super_trunfo
 
