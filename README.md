@@ -1,111 +1,53 @@
 # Tema 2 : Super Trunfo
 
-## Descrição do Projeto
+## Descrição
 
-Este projeto consiste na criação de um programa em linguagem C que permite ao usuário cadastrar duas cartas do jogo Super Trunfo.
-
-O programa solicita ao usuário os dados de cada carta, armazena as informações em variáveis apropriadas e, ao final, exibe os dados cadastrados de forma organizada e legível.
+Programa em linguagem C que permite o cadastro de duas cartas do jogo Super Trunfo, realizando cálculos e comparações entre seus atributos.
 
 ---
 
-## Objetivo
+## Funcionalidades
 
-Implementar:
-
-- Leitura de dados via teclado
-- Armazenamento em variáveis adequadas
-- Exibição formatada das informações
-
-Sem utilizar estruturas de repetição (for, while) ou decisão (if, else).
+- Leitura dos dados de duas cartas via teclado
+- Cálculo da densidade populacional
+- Cálculo do PIB per capita
+- Cálculo do Super Poder
+- Comparação entre as cartas atributo por atributo
 
 ---
 
-## Dados Solicitados para Cada Carta
+## Dados de Cada Carta
 
-Para cada carta, o usuário deve informar:
-
-- Estado (char)
-- Código da Carta (string)
-- Nome da Cidade (string)
-- População (int)
-- Área em km² (float)
-- PIB (float)
-- Número de Pontos Turísticos (int)
+- Estado
+- Código da carta
+- Nome da cidade
+- População (`unsigned long int`)
+- Área (km2)
+- PIB
+- Pontos turísticos
 
 ---
 
-## Funcionamento do Programa
+## Cálculos Realizados
 
-1. O programa solicita os dados da Carta 1.
-2. Em seguida, solicita os dados da Carta 2.
-3. Após o cadastro das duas cartas, o programa exibe todas as informações inseridas.
-4. Cada informação é apresentada em uma linha separada para facilitar a leitura.
+- Densidade Populacional = População ÷ Área  
+- PIB per Capita = (PIB × 1.000.000.000) ÷ População  
 
----
-
-## Requisitos Funcionais Atendidos
-
-✔ Leitura correta de dados via teclado  
-✔ Armazenamento em variáveis apropriadas  
-✔ Exibição organizada e legível  
+O Super Poder é calculado pela soma dos atributos numéricos, considerando o inverso da densidade populacional.
 
 ---
 
-## Requisitos Não Funcionais Atendidos
+## Comparações
 
-Usabilidade:
-O programa possui mensagens claras orientando o usuário durante o cadastro.
-
-Legibilidade:
-O código está indentado, comentado e utiliza nomes de variáveis significativos.
-
-Corretude:
-O programa compila e executa corretamente sem erros.
-
----
-
-## Nivel Aventureiro
-
-### Novas Funcionalidades
-
-Além das funcionalidades do nível novato, o programa passa a:
-
-- Calcular a densidade populacional (população / área)
-- Calcular o PIB per capita (PIB / população)
-- Exibir os valores calculados com duas casas decimais
-
-### Cálculos Realizados
-
-- Densidade Populacional = População ÷ Área
-- PIB per Capita = PIB ÷ População
-
----
-
-### Proposta
-
-No nível aventureiro, o programa poderá ser expandido para incluir:
-
-- Comparação entre cartas
-- Identificação da carta vencedora por atributo
-- Cálculo de super poder
-- Uso de estruturas de decisão e repetição
-- Organização dos dados com estruturas (`struct`)
-
-⚠️ **Este nível não está implementado neste código**, apenas descrito como evolução futura.
-
----
-
-## Requisitos Não Funcionais Atendidos
-
-- Usabilidade: instruções claras ao usuário
-- Legibilidade: código bem indentado e comentado
-- Corretude: compilação e execução sem erros
-- Eficiência: cálculos simples e diretos
+- Para todos os atributos, vence o maior valor
+- Para a densidade populacional, vence o menor valor
+- O resultado é exibido como:
+  - `1` → Carta 1 venceu
+  - `0` → Carta 2 venceu
 
 ---
 
 ## Como Compilar
 
 ```powershell
-gcc super_trunfo_tema2_intermediario.c -o super_trunfo
-
+gcc super_trunfo.c -o super_trunfo
