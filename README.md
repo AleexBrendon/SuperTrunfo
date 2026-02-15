@@ -87,7 +87,76 @@ Super Poder: Carta 1 venceu (valor total)
 
 ---
 
+## Nivel Intermediario : Menu Interativo
+
+# Descricao
+
+Nivel com menu interativo que permite ao usuario escolher o atributo de comparacao entre duas cartas, com regras especificas por atributo.
+
+# Funcionalidades
+
+Menu interativo com switch para escolher atributo:
+
+Populacao
+
+Area
+
+PIB
+
+Pontos Turisticos
+
+Densidade Populacional
+
+Comparacao de duas cartas usando if-else
+
+Maior valor vence (exceto densidade populacional, onde menor vence)
+
+Resultado exibido com: nome do pais, atributo, valores e vencedor
+
+Opcao invalida tratada com default no switch
+
+# Exemplo de Saida
+
+Digite o nome do pais 1: Brasil
+Populacao: 12325000
+Area (km2): 1232.11
+PIB (bilhoes R$): 699.28
+Pontos Turisticos: 40
+
+Digite o nome do pais 2: Argentina
+Populacao: 1232000
+Area (km2): 1521.11
+PIB (bilhoes R$): 300.50
+Pontos Turisticos: 2
+
+Escolha o atributo para comparar:
+1 - Populacao
+2 - Area
+3 - PIB
+4 - Pontos Turisticos
+5 - Densidade Populacional
+Opcao: 2
+
+==============================
+Comparacao (Area):
+Brasil: 1232.11 km2
+Argentina: 1521.11 km2
+Resultado: Argentina venceu!
+
+---
+
 ## Como Compilar
 
-```powershell
+Tema 2:
+
 gcc super_trunfo.c -o super_trunfo
+
+
+Nível Novato:
+
+gcc super_trunfo_novato.c -o super_trunfo_novato
+
+
+Nível Intermediario:
+
+gcc super_trunfo_intermediario.c -o super_trunfo_intermediario
