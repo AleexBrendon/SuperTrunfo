@@ -47,116 +47,90 @@ O Super Poder é calculado pela soma dos atributos numéricos, considerando o in
 
 ---
 
-# Tema 3 : Nível Novato
+# Tema 3 : Super Trunfo
 
-## Descrição
+## Nivel Novato
 
-Neste nível, o foco é comparar apenas duas cartas previamente cadastradas, usando um único atributo numérico definido no código. Não há escolha do atributo pelo usuário, nem menus interativos. O objetivo é praticar estruturas de decisão if e if-else.
+# Descricao
 
-## Funcionalidades
+Comparação de duas cartas utilizando apenas um atributo numérico definido no código, sem interação do usuário. O foco é o uso de if e if-else.
 
-Leitura dos dados de duas cartas via teclado
+# Funcionalidades
+
+Leitura de duas cartas via teclado
 
 Cálculo da densidade populacional e PIB per capita
 
-Escolha de um único atributo para comparação (definido no código)
+Comparação de um único atributo
 
-Determinação da carta vencedora baseada nesse atributo
+Exibição do vencedor
 
-Exibição clara do resultado, incluindo os valores das cartas
+Regras
 
-## Comparação de Cartas
-
-Atributos possíveis: População, Área, PIB, Densidade Populacional, PIB per capita
-
-Para todos os atributos exceto densidade populacional, vence o maior valor
+Maior valor vence
 
 Para densidade populacional, vence o menor valor
-
-Exemplo de saída:
-
-# Exemplo da Comparação de Cartas:
-
-População: Carta 1 venceu (12.300.000 vs 6.000.000)
-Área: Carta 2 venceu (1.500 km² vs 2.000 km²)
-PIB: Carta 1 venceu (400 bilhões vs 350 bilhões)
-Pontos Turísticos: Carta 2 venceu (20 vs 25)
-Densidade Populacional: Carta 2 venceu (8.200 vs 3.000)
-PIB per Capita: Carta 1 venceu (32.520 vs 29.167)
-Super Poder: Carta 1 venceu (valor total)
-
----
 
 ## Nivel Intermediario : Menu Interativo
 
 # Descricao
 
-Nivel com menu interativo que permite ao usuario escolher o atributo de comparacao entre duas cartas, com regras especificas por atributo.
+Comparação de duas cartas com menu interativo, permitindo ao usuário escolher o atributo de comparação usando switch.
 
 # Funcionalidades
 
-Menu interativo com switch para escolher atributo:
+Menu interativo para escolha do atributo
 
-Populacao
+Comparação com if-else
 
-Area
+Regra especial para densidade populacional
 
-PIB
+Tratamento de opção inválida
 
-Pontos Turisticos
+## Nivel Avancado : Comparacao com Dois Atributos
 
-Densidade Populacional
+# Descricao
 
-Comparacao de duas cartas usando if-else
+Desafio final do projeto. Permite a escolha de dois atributos diferentes, com menus dinâmicos, soma dos atributos e uso do operador ternário para determinar o vencedor.
 
-Maior valor vence (exceto densidade populacional, onde menor vence)
+# Funcionalidades
 
-Resultado exibido com: nome do pais, atributo, valores e vencedor
+Escolha de dois atributos numéricos distintos
 
-Opcao invalida tratada com default no switch
+Menu dinâmico que impede repetição de atributos
 
-# Exemplo de Saida
+Comparação individual dos atributos
 
-Digite o nome do pais 1: Brasil
-Populacao: 12325000
-Area (km2): 1232.11
-PIB (bilhoes R$): 699.28
-Pontos Turisticos: 40
+Soma dos atributos para cada carta
 
-Digite o nome do pais 2: Argentina
-Populacao: 1232000
-Area (km2): 1521.11
-PIB (bilhoes R$): 300.50
-Pontos Turisticos: 2
+Tratamento de empate
 
-Escolha o atributo para comparar:
-1 - Populacao
-2 - Area
-3 - PIB
-4 - Pontos Turisticos
-5 - Densidade Populacional
-Opcao: 2
+Resultado final claro e organizado
 
-==============================
-Comparacao (Area):
-Brasil: 1232.11 km2
-Argentina: 1521.11 km2
-Resultado: Argentina venceu!
+# Regras
 
----
+Maior valor vence
+
+Para densidade populacional, vence o menor valor
+
+Em caso de soma igual, o resultado é Empate
 
 ## Como Compilar
 
-Tema 2:
+# Tema 2:
 
 gcc super_trunfo.c -o super_trunfo
 
+# Tema 3:
 
-Nível Novato:
+# Nível Novato:
 
 gcc super_trunfo_novato.c -o super_trunfo_novato
 
-
-Nível Intermediario:
+# Nível Intermediario:
 
 gcc super_trunfo_intermediario.c -o super_trunfo_intermediario
+
+# Nível Avançado:
+
+gcc super_trunfo_avancado.c -o avancado
